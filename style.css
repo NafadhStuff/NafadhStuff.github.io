@@ -71,13 +71,17 @@ button:active{
     padding: 10px 15px;
 }
 
-.history{
-    padding: 0 25px;
+.history h2{
+    margin-left: 20px;
 }
 
 .history-track{
     height: 40vh;
     overflow: auto;
+}
+
+.data{
+    padding: 10px 20px;
 }
 
 .data:not(:nth-last-child(1)){

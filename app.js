@@ -11,7 +11,13 @@ let item = []; let obj = localStorage.getItem("Data");
 //untuk mereset data menjadi sperti awal
 const clear = document.getElementById("reset");
 clear.addEventListener("click", ()=>{
-    localStorage.clear();
+
+    //menampilkan dialog konfirmasi tindakan
+    let confrm = confirm("Ini akan membuat semua data akan terhapus apakah anda yakin?");
+    if(confrm){
+        localStorage.clear();
+    };
+    showBalanceHistory();
 });
 
 // memasukan modal awal menggunakan prompt
